@@ -115,7 +115,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Complex.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Complex.h" />
