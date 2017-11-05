@@ -81,13 +81,13 @@ Complex operator/(const double& number, const Complex& complex)
 
 void Complex::operator+=(const Complex& complex)
 {
-	this->real += complex.real;
-	this->imag += complex.imag;
+	this->real = (this->real + complex.real);
+	this->imag = (this->real + complex.imag);
 }
 void Complex::operator-=(const Complex& complex)
 {
-	this->real -= complex.real;
-	this->imag -= complex.imag;
+	this->real = (this->real - complex.real);
+	this->imag = (this->real - complex.imag);
 }
 void Complex::operator*=(const Complex& complex)
 {
@@ -107,16 +107,16 @@ void Complex::operator/=(const Complex& complex)
 
 void Complex::operator+=(const double& value)
 {
-	this->real += value;
+	this->real = (this->real + value);
 }
 void Complex::operator-=(const double& value)
 {
-	this->real -= value;
+	this->real = (this->real - value);
 }
 void Complex::operator*=(const double& value)
 {
-	this->real = this->real * value;
-	this->imag = this->imag * value;
+	this->real = (this->real * value);
+	this->imag = (this->imag * value);
 }
 void Complex::operator/=(const double& value)
 {
